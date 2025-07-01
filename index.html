@@ -1,42 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculate</title>
+    <title> Calculate </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="Calcul">
 
-<div class="display">
-    <div class="history" id="history">
-</div>
-</div>
-<div class="result" id="result"></div>
-   <div class="keypad">
-    <button type="submit" id="put">DEL</button>
-    <button type="submit" id="put">LOG</button>
-    <button type="submit" id="put">%</button>
-    <button type="submit" id="put">1</button>
-    <button type="submit" id="put">2</button>
-    <button type="submit" id="put">3</button>
-    <button type="submit" id="put">-</button>
-    <button type="submit" id="put">4</button>
-    <button type="submit" id="put">5</button>
-    <button type="submit" id="put">6</button>
-    <button type="submit" id="put">/</button>
-    <button type="submit" id="put">7</button>
-    <button type="submit" id="put">8</button>
-    <button type="submit" id="put">9</button>
-    <button type="submit" id="put">+</button>
-    <button type="submit" id="put">Result</button>
-    <button type="submit" id="put">0</button>
-    <button type="submit" id="put">.</button>
-   </div>
-</div>
+    <div class="calculator">
+        <div class="display">
+            <div class="history" id="history-display"></div>
+            <div class="result" id="result-display">0</div>
+        </div>
+        <div class="keypad">
+            <button data-action="clear" class="special">C</button>
+            <button data-action="delete" class="special">DEL</button>
+            <button data-operator="/" class="operator">÷</button>
+            <button data-operator="*" class="operator">×</button>
 
-<script src="./logic.js"></script>
+            <button data-key="7">7</button>
+            <button data-key="8">8</button>
+            <button data-key="9">9</button>
+            <button data-operator="-" class="operator">-</button>
+            
+            <button data-key="4">4</button>
+            <button data-key="5">5</button>
+            <button data-key="6">6</button>
+            <button data-operator="+" class="operator">+</button>
+            
+            <button data-key="1">1</button>
+            <button data-key="2">2</button>
+            <button data-key="3">3</button>
+            <button data-action="calculate" class="result-btn">=</button>
+            
+            <button data-key="0" class="zero-btn">0</button>
+            <button data-key=".">.</button>
+        </div>
+    </div>
 
+    <script src="logic.js"></script>
 </body>
 </html>
