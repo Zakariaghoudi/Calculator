@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color:green;
+    
+}
+.Calcul{
+    margin-top: 60px;
+  width: 400px;
+  height: 700px;
+    background-color:aqua ;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba (0 , 0 , 0 , 2);
+}
+.display{
+    background-color: blue;
+    color: azure;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: right;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.display .history{
+    font-size: 1rem;
+    color: black;
+    height: 20px;
+
+}
+.display .result{
+    font-size: 2.5rem;
+    font-weight: 700;
+    min-height: 50px
+
+}
+.keypad{
+    display:flex;
+    
+}
+
+#put {
+    width: 100px;
+    border: none;
+    background-color: beige;
+    color: brown;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+
+}
